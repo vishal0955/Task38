@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-web-service
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python hello.py
+    autoDeploy: true
+    plan: free
+    envVars:
+      - key: MY_ENV_VAR
+        value: my_value
