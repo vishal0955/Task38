@@ -1,5 +1,4 @@
 # myapp.py
-
 from flask import Flask, jsonify
 import requests
 from bs4 import BeautifulSoup
